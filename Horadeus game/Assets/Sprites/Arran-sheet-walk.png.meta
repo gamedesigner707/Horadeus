@@ -1,0 +1,828 @@
+fileFormatVersion: 2
+guid: 471bb167c7605fa4fa662ff9c23947c5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5481463038109414677
+    second: Arran-sheet-walk_0
+  - first:
+      213: 57012949803229150
+    second: Arran-sheet-walk_1
+  - first:
+      213: 292578162539278393
+    second: Arran-sheet-walk_2
+  - first:
+      213: 6744137614268170707
+    second: Arran-sheet-walk_3
+  - first:
+      213: 7870030353399902839
+    second: Arran-sheet-walk_4
+  - first:
+      213: -7372921401070897813
+    second: Arran-sheet-walk_5
+  - first:
+      213: 6201224482888447985
+    second: Arran-sheet-walk_6
+  - first:
+      213: -3767625690165610528
+    second: Arran-sheet-walk_7
+  - first:
+      213: 2196531797600259066
+    second: Arran-sheet-walk_8
+  - first:
+      213: 7019613368025247300
+    second: Arran-sheet-walk_9
+  - first:
+      213: -422024964961358395
+    second: Arran-sheet-walk_10
+  - first:
+      213: 7425987466003925890
+    second: Arran-sheet-walk_11
+  - first:
+      213: 614514256145754220
+    second: Arran-sheet-walk_12
+  - first:
+      213: 1535835426652577086
+    second: Arran-sheet-walk_13
+  - first:
+      213: 8587816223040566513
+    second: Arran-sheet-walk_14
+  - first:
+      213: 8358039271206844370
+    second: Arran-sheet-walk_15
+  - first:
+      213: 5878305582987892012
+    second: Arran-sheet-walk_16
+  - first:
+      213: -69033725796660793
+    second: Arran-sheet-walk_17
+  - first:
+      213: -267986639992187267
+    second: Arran-sheet-walk_18
+  - first:
+      213: -6197691458300333813
+    second: Arran-sheet-walk_19
+  - first:
+      213: -6476595405967314560
+    second: Arran-sheet-walk_20
+  - first:
+      213: 5271087719515843943
+    second: Arran-sheet-walk_21
+  - first:
+      213: -5456734353927114258
+    second: Arran-sheet-walk_22
+  - first:
+      213: -3648298298134487384
+    second: Arran-sheet-walk_23
+  - first:
+      213: -2686310824012430709
+    second: Arran-sheet-walk_24
+  - first:
+      213: 7546039623339601522
+    second: Arran-sheet-walk_25
+  - first:
+      213: 3087455735328820528
+    second: Arran-sheet-walk_26
+  - first:
+      213: 4974769472238913766
+    second: Arran-sheet-walk_27
+  - first:
+      213: -63141937360284783
+    second: Arran-sheet-walk_28
+  - first:
+      213: 7256916149217246917
+    second: Arran-sheet-walk_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arran-sheet-walk_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 524
+        width: 56
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea0e0ca86eede3b0800000000000000
+      internalID: -5481463038109414677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 520
+        width: 52
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf5e9cc9fc8ac000800000000000000
+      internalID: 57012949803229150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 520
+        width: 52
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930b037e9427f0400800000000000000
+      internalID: 292578162539278393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_3
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 524
+        width: 56
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d10ece9d6df79d50800000000000000
+      internalID: 6744137614268170707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_4
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 520
+        width: 60
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77271f1c8e6f73d60800000000000000
+      internalID: 7870030353399902839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_5
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 520
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b653b449c0f1ea990800000000000000
+      internalID: -7372921401070897813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_6
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 396
+        width: 56
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7750bcfcc2f0650800000000000000
+      internalID: 6201224482888447985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_7
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 392
+        width: 52
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7fa038564b6bbc0800000000000000
+      internalID: -3767625690165610528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_8
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 392
+        width: 52
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb40dd3806ab7e10800000000000000
+      internalID: 2196531797600259066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_9
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 396
+        width: 56
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e6abdaa2daa6160800000000000000
+      internalID: 7019613368025247300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_10
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 392
+        width: 60
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cda125c78aa42af0800000000000000
+      internalID: -422024964961358395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_11
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 392
+        width: 60
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28bcaa971486e0760800000000000000
+      internalID: 7425987466003925890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_12
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 264
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c682bfac571378800800000000000000
+      internalID: 614514256145754220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_13
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 264
+        width: 64
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d561fee22605510800000000000000
+      internalID: 1535835426652577086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_14
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 264
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f47baaca5d0e2770800000000000000
+      internalID: 8587816223040566513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_15
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 268
+        width: 64
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d77c033f68bdf370800000000000000
+      internalID: 8358039271206844370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_16
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 264
+        width: 64
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25503b78cfe39150800000000000000
+      internalID: 5878305582987892012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_17
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 264
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c94e50313eba0ff0800000000000000
+      internalID: -69033725796660793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_18
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 136
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7617be129be74cf0800000000000000
+      internalID: -267986639992187267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_19
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 136
+        width: 64
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01398894706df9a0800000000000000
+      internalID: -6197691458300333813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_20
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 136
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0813461fac28e16a0800000000000000
+      internalID: -6476595405967314560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_21
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 140
+        width: 64
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d6aad7a5aa62940800000000000000
+      internalID: 5271087719515843943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_22
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 136
+        width: 64
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1f0802409c544b0800000000000000
+      internalID: -5456734353927114258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_23
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 136
+        width: 64
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae18010704ae5dc0800000000000000
+      internalID: -3648298298134487384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_24
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 8
+        width: 52
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82c37ac98e48bad0800000000000000
+      internalID: -2686310824012430709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_25
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 8
+        width: 52
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27eed2a8e0be8b860800000000000000
+      internalID: 7546039623339601522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_26
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 12
+        width: 52
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d440c12a8d8da20800000000000000
+      internalID: 3087455735328820528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_27
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 8
+        width: 52
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e802404a7ee90540800000000000000
+      internalID: 4974769472238913766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_28
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 12
+        width: 52
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193d5351ebcaf1ff0800000000000000
+      internalID: -63141937360284783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arran-sheet-walk_29
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 12
+        width: 52
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ceb3e6f9ceb5b460800000000000000
+      internalID: 7256916149217246917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4ed9ba8c76ce4a54890f0f987b01ce4a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
