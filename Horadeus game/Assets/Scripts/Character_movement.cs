@@ -7,7 +7,14 @@ public class Character_movement : MonoBehaviour
     private Rigidbody m_Rigidbody;
     public float m_Speed = 5f;
     public float faceCamSpeed = 0.1f;
+
+    public Vector2 offsetInPlane;
+    public float sensX, sensY;
+    public float rotX, rotY;
+    public float dst = 10;
+
     public Transform cam;
+
     public Animator animator;
 
     void Start()
@@ -17,9 +24,30 @@ public class Character_movement : MonoBehaviour
         m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ; //Player can't tip over
     }
 
-    void FixedUpdate()
-    {
+    private void Update() {
+        float mouseX = Input.GetAxis("Mouse X") * sensX;
+        float mouseY = Input.GetAxis("Mouse Y") * sensY;
+
+        rotY += mouseX * Time.deltaTime;
+        rotX = Mathf.Clamp(rotX + mouseY * Time.deltaTime, -70, 70);
+
+        Quaternion rot = Quaternion.Euler(0, rotY, 0) * Quaternion.Euler(rotX, 0, 0);
+        Vector3 camPos = transform.position + rot * Vector3.forward * dst;
         
+        cam.rotation = rot;
+        cam.forward = -cam.forward;
+
+        camPos += cam.right * offsetInPlane.x + cam.up * offsetInPlane.y;
+
+        cam.position = camPos;
+    }
+
+    private void LateUpdate() {
+        
+    }
+
+    void FixedUpdate()
+    {       
 
         //make character smootly face camera
         Vector3 lookPos = (cam.position - transform.position) * -1; //-1 because want the back to face the cam. not the front

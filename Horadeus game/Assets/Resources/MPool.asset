@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab297f54b838984eaa5ff7b5cef7a51, type: 3}
+  m_Name: MPool
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 4449014942611335212, guid: 83bc46f5c1317784b9bab85112e6afbb, type: 3}
+  - {fileID: 5905468494541245350, guid: 1d06d3926f3354b4aa36420fb4b0577f, type: 3}
