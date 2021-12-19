@@ -78,10 +78,6 @@ public class BillboardEffect : MonoBehaviour
             FrontBackLeftRight = 4;
         }
 
-
-        Debug.Log("yImaginaryRotation" + yImaginaryRotation);
         animator.SetInteger("Front,Back,Left,Right", FrontBackLeftRight);
-        
-        
     }
 }
