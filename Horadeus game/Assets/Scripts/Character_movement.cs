@@ -57,6 +57,7 @@ public class Character_movement : MonoBehaviour
 
         Vector3 cam_orientation = new Vector3(cam.forward.x, 0, cam.forward.z); //get camera orientation
         Vector3 m_Input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")); //Store user input as a input vector
+        m_Input.Normalize();
         Vector3 m_Movement = cam_orientation * m_Input.z + transform.right * m_Input.x;
         m_Rigidbody.MovePosition(m_Rigidbody.position + m_Movement * m_Speed * Time.fixedDeltaTime); //move character
 
