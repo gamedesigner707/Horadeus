@@ -33,6 +33,10 @@ public class PlayerController : MonoBehaviour {
         if (movement.isInWindow(cursorPosition))
         {
             Cursor.visible = false;
+            if (Input.GetMouseButtonDown(0) | Input.GetMouseButtonDown(1))
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+            }
         } else
         {
             Cursor.visible = true;
