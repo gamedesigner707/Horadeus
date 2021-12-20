@@ -15,17 +15,31 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void InternalUpdate() {
-        if(Input.GetKeyDown(KeyCode.Escape)) {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
             SwitchCursorLock();
         }
 
-        if(Input.GetMouseButtonDown(0)) {
-            Camera camera = gameObject.GetComponentInChildren<Camera>();
+        // Gets the cursor position relative to the game window
+        Vector2 cursorPosition = movement.camera.ScreenToViewportPoint(Input.mousePosition);
+        // Scales the position properly
+        cursorPosition.x *= movement.camera.scaledPixelWidth;
+        cursorPosition.y *= movement.camera.scaledPixelHeight;
 
-            float x = Screen.width / 2;
-            float y = Screen.height / 2;
+        if (movement.isInWindow(cursorPosition))
+        {
+            Cursor.visible = false;
+        } else
+        {
+            Cursor.visible = true;
+        }
 
-            Ray ray = camera.ScreenPointToRay(new Vector3(x, y, 0));
+        if (Input.GetMouseButtonDown(0)) {
+
+            // Coordinates for the center of the game window
+            float mid_x = Screen.width / 2;
+            float mid_y = Screen.height / 2;
+
+            Ray ray = movement.camera.ScreenPointToRay(new Vector3(mid_x, mid_y, 0));
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit))
