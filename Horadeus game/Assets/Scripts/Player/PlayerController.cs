@@ -2,16 +2,21 @@ using MicroCrew.Utils;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour {
 
     public Character_movement movement;
 
     public Transform shootPoint;
-    public float shootForce = 10000000f;
+
+    public float shootForce = 1000f;
+    public TMP_Text arrowCounterUI;
+    private int arrowCount = 30;
 
     public void Init() {
         SwitchCursorLock();
+        arrowCounterUI.text = "Arrows: " + arrowCount.ToString();
     }
 
     public void InternalUpdate() {
@@ -34,7 +39,7 @@ public class PlayerController : MonoBehaviour {
             Cursor.visible = true;
         }
 
-        if (Input.GetMouseButtonDown(0)) {
+        if (Input.GetMouseButtonDown(0) & arrowCount > 0) {
 
             // Coordinates for the center of the game window
             float mid_x = Screen.width / 2;
@@ -43,20 +48,28 @@ public class PlayerController : MonoBehaviour {
             //Makes a Ray pointing out towards the middle of the screen
             Ray ray = movement.camera.ScreenPointToRay(new Vector3(mid_x, mid_y, 0));
             RaycastHit hit;
+            Vector3 destination;
 
-            // Detects if the ray hits an object, then fires the arrow towards that object, from the shootPoint
+            // Detects if the ray hits an object, then sets where the arrow should hit
             if (Physics.Raycast(ray, out hit))
             {
-                Vector3 destination = hit.point;
-
-                Vector3 shootDirection = destination - shootPoint.position;
-                shootDirection.Normalize();
-
-                Arrow arrow = MPool.Get<Arrow>();
-                arrow.transform.position = shootPoint.position;
-                arrow.transform.forward = shootDirection;
-                arrow.Shoot(arrow.transform.forward * shootForce);
+                destination = hit.point;
+            } else
+            {
+                destination = movement.camera.transform.position + ray.direction * 10;
             }
+
+            // Fires the arrow towards the destination
+            Vector3 shootDirection = destination - shootPoint.position;
+            shootDirection.Normalize();
+
+            Arrow arrow = MPool.Get<Arrow>();
+            arrow.transform.position = shootPoint.position;
+            arrow.transform.forward = shootDirection;
+            arrow.Shoot(arrow.transform.forward * shootForce);
+
+            arrowCount--;
+            arrowCounterUI.text = "Arrows: " + arrowCount.ToString();
         }
     }
 
