@@ -12,7 +12,6 @@ public class Arrow : Projectile {
 
         if(fish != null) {
             fish.GetComponent<Rigidbody>().useGravity = true;
-            // Map.inst.DestroyFish(fish);
         }
     }
 

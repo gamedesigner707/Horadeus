@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
     public Character_movement movement;
 
     public Transform shootPoint;
-    public float shootForce = 300f;
+    public float shootForce = 1000f;
 
     public void Init() {
         SwitchCursorLock();
@@ -20,10 +20,26 @@ public class PlayerController : MonoBehaviour {
         }
 
         if(Input.GetMouseButtonDown(0)) {
-            Arrow arrow = MPool.Get<Arrow>();
-            arrow.transform.position = shootPoint.position;
-            arrow.transform.forward = movement.cam.forward;
-            arrow.Shoot(movement.cam.forward * shootForce);
+            Camera camera = gameObject.GetComponentInChildren<Camera>();
+
+            float x = Screen.width / 2;
+            float y = Screen.height / 2;
+
+            Ray ray = camera.ScreenPointToRay(new Vector3(x, y, 0));
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                Vector3 destination = hit.point;
+
+                Vector3 shootDirection = destination - shootPoint.position;
+                shootDirection.Normalize();
+
+                Arrow arrow = MPool.Get<Arrow>();
+                arrow.transform.position = shootPoint.position;
+                arrow.transform.forward = shootDirection;
+                arrow.Shoot(arrow.transform.forward * shootForce);
+            }
         }
     }
 
