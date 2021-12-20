@@ -2,6 +2,7 @@ using MicroCrew.Utils;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour {
 
@@ -9,9 +10,12 @@ public class PlayerController : MonoBehaviour {
 
     public Transform shootPoint;
     public float shootForce = 1000f;
+    public TMP_Text arrowCounterUI;
+    private int arrowCount = 30;
 
     public void Init() {
         SwitchCursorLock();
+        arrowCounterUI.text = "Arrows: " + arrowCount.ToString();
     }
 
     public void InternalUpdate() {
@@ -34,7 +38,7 @@ public class PlayerController : MonoBehaviour {
             Cursor.visible = true;
         }
 
-        if (Input.GetMouseButtonDown(0)) {
+        if (Input.GetMouseButtonDown(0) & arrowCount > 0) {
 
             // Coordinates for the center of the game window
             float mid_x = Screen.width / 2;
@@ -62,6 +66,9 @@ public class PlayerController : MonoBehaviour {
             arrow.transform.position = shootPoint.position;
             arrow.transform.forward = shootDirection;
             arrow.Shoot(arrow.transform.forward * shootForce);
+
+            arrowCount--;
+            arrowCounterUI.text = "Arrows: " + arrowCount.ToString();
         }
     }
 
