@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour {
     public Character_movement movement;
 
     public Transform shootPoint;
+
     public float shootForce = 1000f;
     public TMP_Text arrowCounterUI;
     private int arrowCount = 30;
