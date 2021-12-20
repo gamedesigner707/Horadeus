@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4415123, g: 0.49037015, b: 0.5703843, a: 1}
+  m_IndirectSpecularColor: {r: 0.44151264, g: 0.4903707, b: 0.57038534, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1874,7 +1874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b7f48626660a6b4a980b7c5141013f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Speed: 5
+  m_Speed: 6
   faceCamSpeed: 0.15
   offsetInPlane: {x: 0.58, y: 0.63}
   sensX: 200
@@ -1883,6 +1883,7 @@ MonoBehaviour:
   rotY: 1977.4652
   dst: 3.25
   cam: {fileID: 963194228}
+  camera: {fileID: 0}
   animator: {fileID: 1435634784}
 --- !u!1 &1439362036
 GameObject:

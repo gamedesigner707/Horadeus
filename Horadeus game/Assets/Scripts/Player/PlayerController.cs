@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
     public Character_movement movement;
 
     public Transform shootPoint;
-    public float shootForce = 1000f;
+    public float shootForce = 10000000f;
 
     public void Init() {
         SwitchCursorLock();
