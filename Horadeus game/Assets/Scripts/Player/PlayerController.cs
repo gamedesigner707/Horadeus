@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour {
         cursorPosition.x *= movement.camera.scaledPixelWidth;
         cursorPosition.y *= movement.camera.scaledPixelHeight;
 
+        // Makes cursor invisible only when it's within the game window
         if (movement.isInWindow(cursorPosition))
         {
             Cursor.visible = false;
@@ -39,9 +40,11 @@ public class PlayerController : MonoBehaviour {
             float mid_x = Screen.width / 2;
             float mid_y = Screen.height / 2;
 
+            //Makes a Ray pointing out towards the middle of the screen
             Ray ray = movement.camera.ScreenPointToRay(new Vector3(mid_x, mid_y, 0));
             RaycastHit hit;
 
+            // Detects if the ray hits an object, then fires the arrow towards that object, from the shootPoint
             if (Physics.Raycast(ray, out hit))
             {
                 Vector3 destination = hit.point;
