@@ -23,11 +23,15 @@ public class HCamera : MonoBehaviour
     private Vector2 currerntOffsetInPlane;
     private Vector2 targetOffsetInPlane;
 
+    private Camera playerCamera;
+
     public void Init()
     {
         targetFov = minMaxZoomFOV.y;
         targetOffsetInPlane = offsetDefault;
         currerntOffsetInPlane = offsetDefault;
+
+        playerCamera = gameObject.GetComponent<Camera>();
     }
 
     public void InternalUpdate()
@@ -40,6 +44,11 @@ public class HCamera : MonoBehaviour
 
     private void Look()
     {
+        if (!CursorIsInsideGameWindow())
+        {
+            return;
+        }
+
         float mouseX = Input.GetAxis("Mouse X") * sensX;
         float mouseY = Input.GetAxis("Mouse Y") * sensY;
 
@@ -65,6 +74,21 @@ public class HCamera : MonoBehaviour
         if (instant) {
             cameraComponent.fieldOfView = targetFov;
         }
+    }
+
+    private bool CursorIsInsideGameWindow()
+    {
+
+
+        // Gets the cursor position relative to the game window
+        Vector2 cursorPosition = playerCamera.ScreenToViewportPoint(Input.mousePosition);
+
+        // Scales the position properly
+        cursorPosition.x *= playerCamera.scaledPixelWidth;
+        cursorPosition.y *= playerCamera.scaledPixelHeight;
+
+        return (cursorPosition.x >= 0 & cursorPosition.x <= Screen.width &
+                cursorPosition.y >= 0 & cursorPosition.y <= Screen.height);
     }
 
 }
