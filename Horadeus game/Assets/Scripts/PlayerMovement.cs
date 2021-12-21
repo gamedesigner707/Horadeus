@@ -8,11 +8,6 @@ public class PlayerMovement : MonoBehaviour
     public float m_Speed = 5f;
     public float faceCamSpeed = 0.1f;
 
-    public Vector2 offsetInPlane;
-    public float sensX, sensY;
-    public float rotX, rotY;
-    public float dst = 10;
-
     public Animator animator;
 
     private HCamera playerCamera;
@@ -31,31 +26,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void InternalUpdate()
     {
-        Look();
+        
     }
 
     public void InternalFixedUpdate()
     {
         Move();
-    }
-
-    private void Look()
-    {
-        float mouseX = Input.GetAxis("Mouse X") * sensX;
-        float mouseY = Input.GetAxis("Mouse Y") * sensY;
-
-        rotY += mouseX * Time.deltaTime;
-        rotX = Mathf.Clamp(rotX + mouseY * Time.deltaTime, -70, 70);
-
-        Quaternion rot = Quaternion.Euler(0, rotY, 0) * Quaternion.Euler(rotX, 0, 0);
-        Vector3 camPos = transform.position + rot * Vector3.forward * dst;
-
-        playerCamera.cameraTransform.rotation = rot;
-        playerCamera.cameraTransform.forward = -playerCamera.cameraTransform.forward;
-
-        camPos += playerCamera.cameraTransform.right * offsetInPlane.x + playerCamera.cameraTransform.up * offsetInPlane.y;
-
-        playerCamera.cameraTransform.position = camPos;
     }
 
     private bool CursorIsInsideGameWindow()

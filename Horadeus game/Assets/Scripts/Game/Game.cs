@@ -34,6 +34,8 @@ public class Game : Singleton<Game> {
 
 	private void StartGameLogic()
 	{
+		mainCamera.Init();
+
 		player.Init(mainCamera);
 		map.Init();
 	}
@@ -42,6 +44,7 @@ public class Game : Singleton<Game> {
 	{
 		player.InternalUpdate();
 		map.InternalUpdate();
+		mainCamera.InternalUpdate();
 	}
 
 	private void InternalFixedUpdate()

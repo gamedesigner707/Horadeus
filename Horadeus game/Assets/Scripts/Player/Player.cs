@@ -1,4 +1,3 @@
-using MicroCrew.Utils;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,16 +6,13 @@ using TMPro;
 public class Player : MonoBehaviour {
 
     public SO_PlayerInventory inventory;
+    public Weapon currentWeapon;
 
     public PlayerMovement movement;
 
-    public Transform shootPoint;
-
-    public float shootForce = 1000f;
-
     private ItemData arrowItem;
 
-    private HCamera playerCamera;
+    [HideInInspector] public HCamera playerCamera;
 
     public void Init(HCamera cam) {
         Debug.Log("Init player");
@@ -28,6 +24,8 @@ public class Player : MonoBehaviour {
         arrowItem = inventory.GetItem(ItemType.Arrow);
 
         movement.Init(cam);
+
+        currentWeapon.Equip(this);
     }
 
     public void InternalUpdate() {
@@ -39,42 +37,31 @@ public class Player : MonoBehaviour {
 
         SomeCursorCheck();
 
-        if (Input.GetMouseButtonDown(0) & arrowItem.count > 0)
-        {
-            ShootArrow();
+        if (currentWeapon != null) {
+            if (arrowItem.count > 0)
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    currentWeapon.UseStart();
+                    GameUI.inst.EnableCrosshair(true);
+                }
+            }
+
+            if (Input.GetMouseButton(0))
+            {
+                currentWeapon.UseHold();
+
+                playerCamera.SetZoomPercent(currentWeapon.charge / currentWeapon.maxChargeTime);
+            }
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                currentWeapon.UseRelease();
+                playerCamera.SetZoomPercent(0f);
+                GameUI.inst.EnableCrosshair(false);
+                inventory.TakeItem(arrowItem, 1);
+            }
         }
-    }
-
-    private void ShootArrow()
-    {
-        // Coordinates for the center of the game window
-        float mid_x = Screen.width / 2;
-        float mid_y = Screen.height / 2;
-
-        //Makes a Ray pointing out towards the middle of the screen
-        Ray ray = playerCamera.cameraComponent.ScreenPointToRay(new Vector3(mid_x, mid_y, 0));
-        RaycastHit hit;
-        Vector3 destination;
-
-        // Detects if the ray hits an object, then sets where the arrow should hit
-        if (Physics.Raycast(ray, out hit))
-        {
-            destination = hit.point;
-        } else
-        {
-            destination = playerCamera.transform.position + ray.direction * 10;
-        }
-
-        // Fires the arrow towards the destination
-        Vector3 shootDirection = destination - shootPoint.position;
-        shootDirection.Normalize();
-
-        Arrow arrow = MPool.Get<Arrow>();
-        arrow.transform.position = shootPoint.position;
-        arrow.transform.forward = shootDirection;
-        arrow.Shoot(arrow.transform.forward * shootForce);
-
-        inventory.TakeItem(arrowItem, 1);
     }
 
     private void SomeCursorCheck()
