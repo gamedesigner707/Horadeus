@@ -31,13 +31,13 @@ public class PlayerController : MonoBehaviour {
         cursorPosition.y *= movement.camera.scaledPixelHeight;
 
         // Makes cursor invisible only when it's within the game window
-        if (movement.isInWindow(cursorPosition))
-        {
-            Cursor.visible = false;
-        } else
-        {
-            Cursor.visible = true;
-        }
+        //if (movement.isInWindow(cursorPosition))
+        //{
+        //    Cursor.visible = false;
+        //} else
+        //{
+        //    Cursor.visible = true;
+        //} //This dose not help during building up the game it just keeps unlocking the cursor fromt he game.
 
         if (Input.GetMouseButtonDown(0) & arrowCount > 0) {
 

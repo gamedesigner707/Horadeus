@@ -19,7 +19,9 @@ public class Game : MonoBehaviour {
     }
 
     private void Start() {
+        
         InternalStart();
+     
     }
 
     private void Update() {
