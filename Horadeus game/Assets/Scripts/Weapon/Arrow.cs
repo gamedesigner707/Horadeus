@@ -9,6 +9,13 @@ public class Arrow : Projectile {
     // Used for customizing gravity for this object specifically
     private static float g_multiplier = 0.1f;
 
+    private Rigidbody rigidBody;
+
+    private void Start()
+    {
+        rigidBody = gameObject.GetComponent<Rigidbody>();
+    }
+
     protected override void Interact(Collision c) {
         base.Interact(c);
 
@@ -25,7 +32,6 @@ public class Arrow : Projectile {
 
     private void FixedUpdate()
     {
-        Rigidbody rigidBody = gameObject.GetComponent<Rigidbody>();
         rigidBody.AddForce(Physics.gravity * rigidBody.mass * g_multiplier); // Adds the force of gravity
     }
 
